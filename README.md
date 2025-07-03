@@ -22,7 +22,7 @@ This repository only contains scripts and configuration files, and does not redi
 The following steps must be done to add these software packages on top of this codebase:
 
 1. Unzip the entire package downloaded from git.
-2. Download [Apache Tomcat 9](https://tomcat.apache.org/download-90.cgi), the `zip` binary distribution.
+2. Download [Apache Tomcat](https://tomcat.apache.org/download-90.cgi), the `zip` binary distribution. Consider the version to download based on the ThingWorx version you are using. For example, if you are using ThingWorx 9.5, download Tomcat 9. If you are using ThingWorx 10, download Tomcat 11. Consult the official PTC documentation for the exact version of Tomcat that is compatible with your ThingWorx version.
 3. Unzip it into the `apache-tomcat` folder, ensuring that the files that already exist in it are not overwritten (`/conf` and `/webapps/ROOT` folders).
 4. Download the ThingWorx version of your choosing from the PTC Support portal.
 5. Place the `Thingworx.war` file in `apache-tomcat/webapps`.
