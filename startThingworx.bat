@@ -152,8 +152,10 @@ GOTO :CLOSE
 :WRITEURLFILE
 echo [InternetShortcut]> launchThingworx.url
 echo URL=http://localhost:%config_http_port%/Thingworx/Home>> launchThingworx.url
-rem also open the url
-start "" http://localhost:%config_http_port%/Thingworx/Home
+IF /I "%config_openbrowser_disabled%" NEQ "true" (
+    rem also open the url if not disabled
+    start "" http://localhost:%config_http_port%/Thingworx/Home
+)
 GOTO :STARTTHINGWORX
 
 :CLOSE

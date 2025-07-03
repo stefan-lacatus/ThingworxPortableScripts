@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Bash script for starting Thingworx
 # Should be compatible with Linux, OSX, and Windows under MinGW

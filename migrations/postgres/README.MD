@@ -7,6 +7,8 @@ Please see the official instructions on how to apply them. For example under [Co
 The scripts require `psql` installed. It is usually installed when you install the PostgreSQL server.
 However, you can also install it separately, by following the instructions [here](https://docs.risingwave.com/docs/current/install-psql-without-postgresql/).
 
+## New environment setup
+
 A common workflow for is to:
 1. Prerequisites
    1. Ensure that `psql` is installed and in your PATH. You can check this by running `psql --version` in a terminal.
@@ -35,6 +37,13 @@ A common workflow for is to:
 5. Run `thingworxPostgresSchemaSetup.sh`
 6. Open `platform-settings.json` and adjust the `PersistenceProviderPackageConfigs.PostgresPersistenceProviderPackage.ConnectionInformation` section.
 7. Run ThingWorx using `startThingworx.sh` (or `.bat` if running windows)
+
+## Upgrading an existing environment
+
+The following steps are needed to upgrade an existing ThingWorx environment with PostgreSQL:
+
+0. Retrieve the connection details from the existing `platform-settings.json` file.
+1. Run `./update/update_postgres.sh -h HOST -u USER -d DATABASE --update_all  -p 5432 -s public`
 
 ## Backup and restore
 

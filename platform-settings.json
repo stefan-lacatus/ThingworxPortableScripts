@@ -42,8 +42,8 @@
     "PostgresPersistenceProviderPackage": {
       "ConnectionInformation": {
         "jdbcUrl": "jdbc:postgresql://localhost:5432/thingworx",
-        "password": "password",
-        "username": "twadmin"
+        "username": "twadmin",
+        "password": "password"
       }
     }
   }

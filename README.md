@@ -46,9 +46,9 @@ Here are the links to the default ports:
 
 ## Advanced Usages
 
-### Changing the Thingworx Version or the Persistance Package
+### Changing the Thingworx Version or the Persistence Package
 
-By default, this package uses Thingworx with PostgreSQL. To change the TWX version just replace the `Thingworx.war` file in `apache-tomcat/webapps` with your war file. Please refer to the migration guide for information on how to move across persistance provider packages. If you want to change the `platform-settings.json` file, you can find it in the root directory of the archive.
+By default, this package uses Thingworx with PostgreSQL. To change the TWX version just replace the `Thingworx.war` file in `apache-tomcat/webapps` with your war file. Please refer to the migration guide for information on how to move across persistence provider packages. If you want to change the `platform-settings.json` file, you can find it in the root directory of the archive.
 
 ### Generating services for an instance
 
